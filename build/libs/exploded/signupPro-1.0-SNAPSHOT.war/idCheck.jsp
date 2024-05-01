@@ -9,7 +9,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            /*background-color: #f0f0f0;*/
             background-image: url("https://i.pinimg.com/736x/b0/df/95/b0df95cfc6f31293d002d4d6daac253c.jpg");
             display: flex;
             flex-direction: column;
