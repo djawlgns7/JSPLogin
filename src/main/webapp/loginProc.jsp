@@ -1,0 +1,37 @@
+<%@page import="signupPro.mgr.MemberMgr"%>
+<%@ page import="signupPro.bean.MemberBean" %>
+<%@ page import="static signupPro.mgr.MemberMgr.getInstance" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>로그인 처리</title>
+</head>
+<body>
+<%
+    request.setCharacterEncoding("utf-8");
+    String id = request.getParameter("id");
+    String pwd = request.getParameter("pwd");
+
+    MemberMgr mgr = getInstance();
+    int loginResult = mgr.loginCheck(id, pwd);
+
+    if(loginResult == 1) {
+        // 로그인한 회원의 정보를 세션에 담음
+        MemberBean loginMember = mgr.findMember(id);
+        session.setAttribute("loginMember", loginMember);
+
+        response.sendRedirect("main.jsp");
+    }else {
+%>
+        <script>
+            alert("아이디 혹은 비밀번호가 일치하지 않습니다");
+            window.location.href = "login.jsp";
+        </script>
+<%
+    }
+%>
+</body>
+</html>

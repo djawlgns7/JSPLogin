@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://pbs.twimg.com/media/FTz-XHRUsAAnVW_?format=jpg&name=large");
+    /*background-image: url("https://i.pinimg.com/736x/b0/df/95/b0df95cfc6f31293d002d4d6daac253c.jpg");*/
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+button{
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    margin-right: 10px;
+    border-radius: 25px;
+}
