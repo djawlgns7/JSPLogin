@@ -3,7 +3,7 @@
 
 ## 미리보기
 <p align="center">
-  <img align="center" src="https://github.com/djawlgns7/JSPLoginSite/blob/master/readmeResource/image/login.png" style="width:30%;height:30%;margin-right:20px"/>
+  <img align="center" src="https://github.com/djawlgns7/JSPLoginSite/blob/main/readmeResource/image/login.png" style="width:30%;height:30%;margin-right:20px"/>
   <img align="center" src="https://github.com/djawlgns7/JavaGym/raw/readme/readmeResources/image/demonstrationImage2.png" style="width:30%;height:30%;margin-right:20px;margin-left:20px"/>
   <img align="center" src="https://github.com/djawlgns7/JavaGym/raw/readme/readmeResources/image/demonstrationImage3.png" style="width:30%;height:30%;margin-left:20px"/>
 </p>
